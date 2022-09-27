@@ -70,9 +70,13 @@ img.avatar {
     max-width: 70%;
 }
 
-img.card {
-    width: 70%;
-    max-width: 87%;
+.cards {
+    width: 100%;
+}
+
+img.image {
+    width: 100%;
+    max-width: 100%;
 }
 
 /* .icon:before {
@@ -88,3 +92,24 @@ img.card {
     width: 100px;
     border: 2px solid var(--white);
 } */
+
+
+@media screen and (min-width: 768px) {
+    .col-sm-12 {
+        display: none;
+    }
+
+    .col-md-6 {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .col-md-6 {
+        display: none;
+    }
+
+    .col-lg-4 {
+        display: block;
+    }
+}
