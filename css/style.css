@@ -10,6 +10,15 @@
     min-height: 50px;
 }
 
+:root {
+    /* Color styles */
+    --light-blue-green: #1ABC9C;
+    --dark-blue: #2C3E50;
+    --white: #FFFFFF;
+    --petrol: #3A546D;
+    --black: #000
+}
+
 /* TEXT */
 
 
@@ -17,41 +26,38 @@
 
 
 /* COLOR */
-.my-bg-black {
-    background-color: black;
+.dark-grey {
+    background-color: var(--dark-blue);
 }
 
 .bg-green {
-    background-color: green;
+    background-color: var(--light-blue-green);
 }
 
 .bg-grey {
-    background-color: grey;
+    background-color: var(--petrol);
 }
 
-.bg-dark-grey {
-    background-color: darkgrey;
-}
-
-.txt-white {
-    color: white;
+.bg-white {
+    background-color: var(--white);
 }
 
 /* GENERAL */
 body {
-    background-color: white;
-    color: black;
+    background-color: var(--white);
+    color: var(--black);
 }
 
 
 /* HEADER */
 header {
-    background-color: black;
+    background-color: var(--dark-blue);
     height: 90px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1100;
 }
 
 /* MAIN */
@@ -63,3 +69,22 @@ img.avatar {
     width: 70%;
     max-width: 70%;
 }
+
+img.card {
+    width: 70%;
+    max-width: 87%;
+}
+
+/* .icon:before {
+    content: '';
+    display: block;
+    width: 100px;
+    border: 2px solid var(--white);
+} */
+
+/* .icon:after {
+    content: '';
+    display: block;
+    width: 100px;
+    border: 2px solid var(--white);
+} */
