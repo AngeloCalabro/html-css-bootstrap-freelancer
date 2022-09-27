@@ -19,6 +19,12 @@
     --black: #000
 }
 
+/* GENERAL */
+body {
+    background-color: var(--white);
+    color: var(--black);
+}
+
 /* TEXT */
 
 
@@ -26,7 +32,7 @@
 
 
 /* COLOR */
-.dark-grey {
+.bg-dark-grey {
     background-color: var(--dark-blue);
 }
 
@@ -42,11 +48,11 @@
     background-color: var(--white);
 }
 
-/* GENERAL */
-body {
-    background-color: var(--white);
-    color: var(--black);
+.link-color {
+    color: var(--light-blue-green);
 }
+
+/* HOVER */
 
 
 /* HEADER */
@@ -77,39 +83,4 @@ img.avatar {
 img.image {
     width: 100%;
     max-width: 100%;
-}
-
-/* .icon:before {
-    content: '';
-    display: block;
-    width: 100px;
-    border: 2px solid var(--white);
-} */
-
-/* .icon:after {
-    content: '';
-    display: block;
-    width: 100px;
-    border: 2px solid var(--white);
-} */
-
-
-@media screen and (min-width: 768px) {
-    .col-sm-12 {
-        display: none;
-    }
-
-    .col-md-6 {
-        display: block;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .col-md-6 {
-        display: none;
-    }
-
-    .col-lg-4 {
-        display: block;
-    }
 }
