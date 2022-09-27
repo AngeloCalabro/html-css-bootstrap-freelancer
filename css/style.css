@@ -1,0 +1,65 @@
+/* RESET */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.debug {
+    border: 1px solid black;
+    min-height: 50px;
+}
+
+/* TEXT */
+
+
+/* PADDING & MARGIN */
+
+
+/* COLOR */
+.my-bg-black {
+    background-color: black;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-grey {
+    background-color: grey;
+}
+
+.bg-dark-grey {
+    background-color: darkgrey;
+}
+
+.txt-white {
+    color: white;
+}
+
+/* GENERAL */
+body {
+    background-color: white;
+    color: black;
+}
+
+
+/* HEADER */
+header {
+    background-color: black;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* MAIN */
+#hero {
+    padding-top: 100px;
+}
+
+img.avatar {
+    width: 70%;
+    max-width: 70%;
+}
