@@ -11,6 +11,13 @@
 body {
     background-color: var(--white);
     color: var(--black);
+    scroll-behavior: smooth;
+}
+
+#portfolio,
+#about,
+#contact {
+    scroll-margin-bottom: 3rem;
 }
 
 /* COLOR */
@@ -36,6 +43,17 @@ body {
 
 .link-color {
     color: var(--light-blue-green);
+}
+
+/* BTN */
+.my-btn-outline-success {
+    color: var(--light-blue-green);
+    border: 1px solid var(--light-blue-green);
+}
+
+.btn.my-btn-outline-success:hover {
+    background-color: var(--light-blue-green);
+    border: 1px solid var(--light-blue-green);
 }
 
 /* LINK */
