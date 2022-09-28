@@ -164,11 +164,11 @@
 
         <!-- CONTACT -->
         <section id="contact">
-            <div class="container-sm text-center txt-dark-grey py-3">
-                <h2 class="text-uppercase">Contact me</h2>
+            <div class="container-sm  txt-dark-grey py-3">
+                <h2 class="text-uppercase text-center">Contact me</h2>
 
                 <!-- Icon Divider-->
-                <div class="star-dark d-flex justify-space-between align-items-center w-50 m-auto pb-3">
+                <div class="text-center star-dark d-flex justify-space-between align-items-center w-50 m-auto pb-3">
                     <i class="fa-solid fa-star fs-4"></i>
                 </div>
 
@@ -179,29 +179,32 @@
                     <div class="col-lg-8 col-xl-7">
                         <form id="contactForm">
                             <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." />
-                                <label for="name">Full name</label>
+                            <div class="mb-3">
+                                <label class="text-start" for="name">Full name</label>
+                                <input class="form-control border-start-0 border-end-0 border-top-0" id="name"
+                                    type="text" placeholder="Enter your name..." required />
                             </div>
                             <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" />
+                            <div class="mb-3">
                                 <label for="email">Email address</label>
+                                <input class="form-control border-start-0 border-end-0 border-top-0" id="email"
+                                    type="email" placeholder="name@example.com" required />
                             </div>
                             <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(0039) 123-45-67-890" />
+                            <div class="mb-3">
                                 <label for="phone">Phone number</label>
+                                <input class="form-control border-start-0 border-end-0 border-top-0" id="phone"
+                                    type="tel" placeholder="(0039) 123-45-67-890" required />
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
                                 <textarea class="form-control" id="message" type="text"
-                                    placeholder="Enter your message here..." style="height: 10rem"></textarea>
-                                <label for="message">Message</label>
+                                    style="height: 10rem"></textarea>
+                                <label for="message">Enter your message here...</label>
                             </div>
-                            <!-- Submit Button-->
+                            <!-- Button-->
                             <button class="btn btn-outline-success my-btn-outline-success btn-xl float-start"
-                                id="submitButton" type="button">Send</button>
+                                id="sendButton" type="button">Send</button>
                             <button class="btn btn-outline-danger btn-xl float-end" id="resetButton"
                                 type="reset">Reset</button>
                         </form>
