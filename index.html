@@ -31,21 +31,21 @@
     <header>
         <nav class="navbar navbar-expand-md navbar-dark h-100">
             <div class="container">
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand text-uppercase" href="#">Start Bootstrap</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#boot-navbar"
                     aria-controls="boot-navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse bg-dark-grey" id="boot-navbar">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 text-uppercase">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -57,15 +57,19 @@
     <main>
 
         <!-- HERO -->
-        <section id="hero" class="bg-green text-white">
-            <div class="container text-white">
-                <div class="row justify-content-center">
-                    <div class="col-auto text-center">
+        <section id="hero" class="bg-green pb-3">
+            <div class="container-md text-white text-center">
+                <div class="flex-column justify-content-center">
+                    <div class="col-auto m-auto">
                         <img class="avatar" src="./img/avatar.svg" alt="avatar">
                         <h1 class="text-uppercase">start bootstrap</h1>
-
+                    </div>
+                    <div class="col-auto">
                         <!-- Icon Divider-->
-                        <div class="icon py-2"><i class="fas fa-star"></i></div>
+                        <div class="star d-flex justify-space-between align-items-center w-50 m-auto pb-3">
+                            <i class="fa-solid fa-star fs-4"></i>
+                        </div>
+
                         <p class="text-uppercase">Graphic Artist - Web designer - illustrator</p>
                     </div>
                 </div>
@@ -78,35 +82,45 @@
                 <h2 class="text-uppercase">Portfolio</h2>
 
                 <!-- Icon Divider-->
-                <div class="icon py-2"><i class="fas fa-star fs-4"></i></div>
+                <div class="star star-dark d-flex justify-space-between align-items-center w-50 m-auto pb-3">
+                    <i class="fa-solid fa-star fs-4"></i>
+                </div>
 
                 <!-- CARDS PORTFOLIO -->
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-sm-12 col-md-6 col-lg-4 g-4">
-                        <img class="image rounded" src="./img/cabin.png" alt="cabina">
-                        <div class="">
-                            <!-- <h4><i class="fas fa-plus text-white"></i></h4> -->
+                <div class="row gy-3">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="layover-container rounded-3 position-relative overflow-hidden">
+                            <img class="img-fluid" src="./img/cabin.png" alt="cabin">
                         </div>
-                        <!-- <div class="mask text-light d-flex justify-content-center flex-column text-center">
-                            <h4><i class="fas fa-plus"></i></h4>
-                        </div> -->
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 g-4">
-                        <img class="image rounded" src="./img/cake.png" alt="cake">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="layover-container rounded-3 position-relative overflow-hidden">
+                            <img class="img-fluid" src="./img/cake.png" alt="cake">
+                        </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 g-4">
-                        <img class="image rounded" src="./img/circus.png" alt="circus">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="layover-container rounded-3 position-relative overflow-hidden">
+                            <img class="img-fluid" src="./img/circus.png" alt="circus">
+                        </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 g-4">
-                        <img class="image rounded" src="./img/game.png" alt="game">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="layover-container rounded-3 position-relative overflow-hidden">
+                            <img class="img-fluid" src="./img/game.png" alt="game">
+                        </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 g-4">
-                        <img class="image rounded" src="./img/safe.png" alt="safe">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="layover-container rounded-3 position-relative overflow-hidden">
+                            <img class="img-fluid" src="./img/safe.png" alt="safe">
+                        </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 g-4">
-                        <img class="image rounded" src="./img/submarine.png" alt="submarine">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="layover-container rounded-3 position-relative overflow-hidden">
+                            <img class="img-fluid" src="./img/submarine.png" alt="submarine">
+                        </div>
                     </div>
                 </div>
+
+            </div>
 
             </div>
         </section>
@@ -117,7 +131,9 @@
                 <h2 class="text-uppercase">About</h2>
 
                 <!-- Icon Divider-->
-                <div class="icon py-2"><i class="fas fa-star"></i></div>
+                <div class="star d-flex justify-space-between align-items-center w-50 m-auto pb-3">
+                    <i class="fa-solid fa-star fs-4"></i>
+                </div>
 
                 <!-- About Section Content-->
                 <div class="row">
@@ -148,14 +164,51 @@
 
         <!-- CONTACT -->
         <section id="contact">
-            <div class="container-sm text-center py-3">
+            <div class="container-sm text-center txt-dark-grey py-3">
                 <h2 class="text-uppercase">Contact me</h2>
 
                 <!-- Icon Divider-->
-                <div class="icon py-2"><i class="fas fa-star"></i></div>
+                <div class="star-dark d-flex justify-space-between align-items-center w-50 m-auto pb-3">
+                    <i class="fa-solid fa-star fs-4"></i>
+                </div>
+
                 <!-- FORM DA INSERIRE -->
 
-
+                <!-- Contact Section Form-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        <form id="contactForm">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..."
+                                    data-sb-validations="required" />
+                                <label for="name">Full name</label>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com"
+                                    data-sb-validations="required,email" />
+                                <label for="email">Email address</label>
+                            </div>
+                            <!-- Phone number input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" type="tel" placeholder="(0039) 123-45-67-890"
+                                    data-sb-validations="required" />
+                                <label for="phone">Phone number</label>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text"
+                                    placeholder="Enter your message here..." style="height: 10rem"
+                                    data-sb-validations="required"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            <!-- Submit Button-->
+                            <button class="btn btn-outline-success btn-xl float-start" id="submitButton"
+                                type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
                 <!-- CHIUDERE FORM -->
             </div>
         </section>
